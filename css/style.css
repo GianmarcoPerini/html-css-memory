@@ -6,21 +6,30 @@
 }
 
 body{
-    background-color: rgb(153, 216, 252)
+    background-color: rgb(153, 216, 252);
+    height: 100vh;
 }
 
 header{
-    margin: 10px 0;
+    padding: 30px;
     text-align: center;
-    font-size: 5em;
+    font-size: 3.5em;
     text-shadow: 1px 2px 5px black;
     color: white;
 }
 
+main{
+    height: 70%;
+}
+
 .row{
-    width: 50%;
-    height: 200px;
-    margin: 10px auto;
+    width: 40%;
+    height: calc(100% / 3 - 10px);
+    margin: 0 auto;
+}
+
+.center{
+    margin: 10px  auto;
 }
 
 .card{
@@ -44,6 +53,7 @@ header{
 
 .card:hover .card-hover{
     display: block;
+    background-color: white;
 }
 
 .card-hover > p{
@@ -51,7 +61,7 @@ header{
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .sub{
@@ -110,6 +120,6 @@ header{
 
 footer{
     text-align: center;
-    margin: 40px;
-    font-size: 1.2em;
+    margin: 50px 0 0 0;
+    font-size: .8em;
 }
